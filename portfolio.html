@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Rangu - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BHAVYA RANGU</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="connect-button">Let's Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Hi I'm Bhavya</h2>
+        <p>I am a dedicated Full Stack Developer with a Master's Degree in Computer Science from California State University, Fullerton. With three years of hands-on experience, I am actively seeking roles as a Full Stack Developer and Software Developer.
+        During my tenure as an IT Student Assistant, I honed my skills in web design and Amazon Web Services, further enhancing my technical expertise. My portfolio highlights my practical, user-centric approach to problem-solving, demonstrating my ability to develop effective and innovative solutions.</p>
+        <p>I am proficient in multiple programming languages, including Java, Python, and JavaScript, and possess a strong understanding of various software development methodologies. I am passionate about contributing to cutting-edge projects and am eager to make a significant impact in the industry through my skills and dedication.</p>
+        <div class="resume-button-container">
+            <a href="Resume.pdf" class="resume-button" target="_blank">Resume</a>
+        </div>
+        
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="buttons">
+            <button onclick="showContent('languages', 'skills')">Languages/OS</button>
+            <div id="languages" class="skills-content"></div>
+            <button onclick="showContent('frameworks', 'skills')">Frameworks/Tools</button>
+            <div id="frameworks" class="skills-content"></div>
+            <button onclick="showContent('webdev', 'skills')">Web/Mobile Development</button>
+            <div id="webdev" class="skills-content"></div>
+            <button onclick="showContent('databases', 'skills')">Databases</button>
+            <div id="databases" class="skills-content"></div>
+            <button onclick="showContent('cloud', 'skills')">Cloud Technologies</button>
+            <div id="cloud" class="skills-content"></div>
+        </div>
+        <div id="languages-content" style="display: none;">
+            <p>Python, Java, C, C++, SQL, C#, PHP, SQL, R, Golang, Kotlin, Ruby on Rails, HTML, CSS, JavaScript, TypeScript, Unix, Linux</p>
+        </div>
+        <div id="frameworks-content" style="display: none;">
+            <p>Docker, Angular, Kubernetes, Git, Gitlab, JIRA, Jenkins, Selenium</p>
+        </div>
+        <div id="webdev-content" style="display: none;">
+            <p>Flask, Django, Node, Express, React, Next, Angular, Redux, Spring Boot, REST, Android Studio, Swift, .NET</p>
+        </div>
+        <div id="databases-content" style="display: none;">
+            <p>MySQL, SQLite, MongoDB, PostgreSQL, Cassandra</p>
+        </div>
+        <div id="cloud-content" style="display: none;">
+            <p>AWS (Lambda, EC2, S3, ECR, Route 53, IAM, DynamoDB, RDS, EBS, Kinesis), Azure SQL Database, GCP, Salesforce</p>
+        </div>
+    </section>
+
+    <section id="journey">
+        <h2>Journey</h2>
+        <div class="buttons">
+            <button onclick="showContent('DARWINBOX', 'journey')">DARWINBOX</button>
+            <div id="DARWINBOX" class="journey-content"></div>
+            <button onclick="showContent('ACCENTURE', 'journey')">ACCENTURE</button>
+            <div id="ACCENTURE" class="journey-content"></div>
+            <button onclick="showContent('INFOSYS', 'journey')">INFOSYS</button>
+            <div id="INFOSYS" class="journey-content"></div>
+        </div>
+        <div id="DARWINBOX-content" style="display: none;">
+            <div class="company-info">
+                <img src="darwinbox.png" alt="Darwinbox Logo">
+                <div>
+                    <h3>DARWINBOX, Hyderabad, Telangana - Web Developer Intern (May 2019–Nov 2019)</h3>
+                    <ul>
+                        <li>Launched a feature-rich website, attracting 1,000+ monthly visitors with HTML, CSS, and JavaScript</li>
+                        <li>Handled security (90% reduction in vulnerabilities) and UX (20% enhancement) through cookies, and design optimization.</li>
+                        <li>Made web pages dynamic and asynchronous using AJAX, JSON, and XML.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="ACCENTURE-content" style="display: none;">
+            <div class="company-info">
+                <img src="Accenture.svg.png" alt="Accenture Logo">
+                <div>
+                    <h3>ACCENTURE, Banjara Hills, Telangana - Full stack developer (Jan 2020 – Aug 2021)</h3>
+                    <ul>
+                        <li>Involved in analysis, design, and development and testing of the application and participated in Daily Stand-Up scrum for client requirements.</li>
+                        <li>Designed user-centric front-end applications and interactive web pages utilizing HTML, XHTML, and CSS.</li>
+                        <li>Developed navigation bars and enhanced interactivity on web pages through jQuery plugins, AJAX, and JavaScript.</li>
+                        <li>Undertook a comprehensive website redesign to align with web and industry standards. Used Node.js frameworks in the construction of web applications.</li>
+                        <li>Developed and maintained server-side applications using Java8, and core Java, ensuring robust and scalable backend solutions.</li>
+                        <li>Developed Single Page Web Application with React.js, Redux, Express.js, Node.js, REST API, and MongoDB.</li>
+                        <li>Used Postman to test API and used GIT as version control tool. Used React, JavaScript, Query to create Controllers to handle events triggered by clients and send request to server increasing the efficiency of client-server interactions by 25%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="INFOSYS-content" style="display: none;">
+            <div class="company-info">
+                <img src="Infosys_logo.svg.png" alt="Infosys Logo">
+                <div>
+                    <h3>INFOSYS, Banjara Hills, Telangana - Software Engineer (Sep 2021 - Aug 2022)</h3>
+                    <ul>
+                        <li>Led full-stack development using Angular, Node.js, .NET, C#, Entity framework 6.0 and SpringBoot, integrating microservices for a 25% scalability improvement.</li>
+                        <li>Debugged the application using Chrome Inspector, Firebug, lE Tester and many other debug tools.</li>
+                        <li>Inspected migration of cloud infrastructure to AWS, resulting in a 30% cost reduction and increased reliability.</li>
+                        <li>Collaborated with clients to integrate innovative Machine Learning modules into their application significantly improving efficiency and effectiveness.</li>
+                        <li>Involved in implementation of RESTFUL web service APIs using Node.js, .NET, which were consumed by making AJAX calls and JSON as data exchanging tool.</li>
+                        <li>Integrated third-party APIs and services to expand application functionality and provide richer features to end-users.</li>
+                        <li>Worked with partners and clients at every stage of implementation of the integration, for instance to gather requirements, review completed implementation.</li>
+                        <li>Implemented continuous integration and continuous delivery (CI/CD) pipelines using tools such as Jenkins, GitHub CI, and Docker, automating the testing and deployment processes to ensure rapid and reliable delivery of new features.</li>
+                        <li>Gained an experience with test-driven development and agile environment enhancing development speed by 25%.</li>
+                        <li>Participated in regular sprint planning, backlog grooming, and retrospective meetings, contributing to continuous improvement of development processes and team efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="buttons">
+            <button onclick="showContent('splitwise', 'projects')">Real-Time Data Processing of Splitwise Data</button>
+            <div id="splitwise" class="projects-content"></div>
+            <button onclick="showContent('chatbot', 'projects')">Chatbot</button>
+            <div id="chatbot" class="projects-content"></div>
+            <button onclick="showContent('ecommerce', 'projects')">E-commerce Book Store</button>
+            <div id="ecommerce" class="projects-content"></div>
+        </div>
+        <div id="splitwise-content" style="display: none;">
+            <div class="project-container">
+                <img src="splitwise.jpg" alt="Splitwise Logo">
+                <div>
+                    <h3>Real-Time Data Processing of Splitwise Data using Big Data Technologies</h3>
+                    <ul>
+                        <li>Handling and analyzing the information available in the application Splitwise in real-time so we can get the cost designs, person investing propensities, and suggestions for taking a toll optimization.</li>
+                        <li><strong>Technologies:</strong> Apache Kafka, Apache Spark, Apache Scala, Apache Cassandra, Spring Boot, JetBrains Kotlin, Docker Desktop, Docker Compose, Gradle, SBT (Simple Build tool)</li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+        <div id="chatbot-content" style="display: none;">
+            <div class="project-container">
+                <img src="chatbot.jpeg" alt="Chatbot Logo">
+                <div>
+                    <h3>CHATBOT</h3>
+                    <ul>
+                        <li><strong>Technologies:</strong>Node.js, HTML, CSS, Python, Machine learning algorithms, NLP, JavaScript, React JS, Passport</li>
+                        <li>Developed an innovative Chatbot application to provide intelligent and context-aware assistance to users. It takes the input of both voice and text and answers according to the query. Integrated Google authentication for user authentication.</li>
+                        <li>Designed and developed RESTful APIs for seamless communication between the frontend and backend services, ensuring efficient data handling and real-time responses. Deployed and managed the application on Google Cloud Platform (GCP), leveraging its services for scalability and reliability.</li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+        <div id="ecommerce-content" style="display: none;">
+            <div class="project-container">
+                <img src="book.png" alt="E-commerce Book Store Logo">
+                <div>
+                    <h3>E-commerce Book Store</h3>
+                    <ul>
+                        <li>Developed an e-commerce book store project based on ASP.NET Core and C# for robust backend development, with Entity Framework Core for database management.</li>
+                        <li>I had used Stripe for payments, Twilio for SMS notifications, and supports OAuth authentication via Facebook and Google. Docker is used for containerization, ensuring consistent environments and streamlined deployments.</li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <h3>Social Profiles</h3>
+        <div class="contact-container">
+            <div class="contact-left">
+                <img src="my_pic.JPG" alt="Your Picture" width="200">
+            </div>
+            <div class="contact-right">
+            <ul>
+                <li>
+                    <a href="https://github.com/bhavyarangu333" target="_blank">
+                        <img src="github.png" alt="GitHub Logo" width="20" height="20"> GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:bhavyarangu0309@gmail.com" target="_blank">
+                        <img src="Gmail_icon.png" alt="Gmail Logo" width="20" height="20"> Gmail
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/bhavya-rangu-66b72a1b8/" target="_blank">
+                        <img src="LinkedIn_logo.png" alt="LinkedIn Logo" width="20" height="20"> LinkedIn
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+        
+
+    </section>
+
+    <script>
+        function showContent(sectionId, type) {
+            const allContents = document.querySelectorAll(`.${type}-content`);
+            allContents.forEach(content => {
+                content.innerHTML = ''; // Clear content
+                content.style.display = 'none';
+            });
+
+            const content = document.getElementById(sectionId + '-content').innerHTML;
+            const section = document.getElementById(sectionId);
+            section.innerHTML = content; // Insert content
+            section.style.display = 'block';
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
